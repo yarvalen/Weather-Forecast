@@ -72,13 +72,13 @@ let everyDayTemp = fiveDay.list[i].main.temp;
 let everyDayHumidity = fiveDay.list[i].main.humidity;
 let everyDayWind = fiveDay.list[i].wind.speed;
 // console.log(everyDayWind)
-let everyDayIcon = cityweather.list[i].weather.icon
+let everyDayIcon = fiveDay.list[i].weather.icon
 let imageUrl = "https://openweathermap.org/img/wn/" + everyDayIcon + "@2x.png"
 
+$(forecastinfo).append($("<img>").attr("src", imageUrl))
 $(forecastinfo).append($("<p>").text("Temperature is:"+everyDayTemp))
 $(forecastinfo).append($("<p>").text("Humidity is:"+everyDayHumidity))
 $(forecastinfo).append($("<p>").text("Wind speed is:"+everyDayWind))
-$(forecastinfo).append($("<img>").attr("src", imageUrl))
 
 
     }

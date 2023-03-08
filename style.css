@@ -1,29 +1,33 @@
-.forecast-div {
-    background-color: #8CACD6;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: max-content;
+:root {
+    --lightBlue: #8ecae6;
+    --darkBlue: #044464;
+    --yellow: #ffb703;
 }
 
-.current-weather {
-    border-color: black;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 10px;
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1 {
-    background-color: #8CACD6;
-    text-align: center;
-    color: white;
-    padding: 10px;
+body {    
+    height: 100vh;
 }
 
-h2, h4 {
-    font-size: large;
+.container-fluid {
+    background-color: var(--yellow);
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    background-size: cover;
 }
+
+.fiveDays {
+    color:var(--darkBlue);
+    font-size: 13px;
+}
+
 
 button {
     border-radius: 10px;
@@ -32,13 +36,6 @@ button {
 }
 
 img {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
-}
-
-.previous-searches {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0px;
-    width: 16rem;
 }
