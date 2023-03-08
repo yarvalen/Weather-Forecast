@@ -51,14 +51,9 @@ return response.json();
     nowresults.appendChild(cityhumidity)
     nowresults.appendChild(citywind)
     $(nowresults).append($("<img>").attr("src", imageUrl))
-
-    // nowresults.appendChild(currentIcon)
-
     citySearch(cityweather.coord.lon,cityweather.coord.lat)
-
-} )
+})
 }
-
 function citySearch (lon,lat){
 fetch ('https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&units=imperial&appid='+apiKey)
 .then(function (response){
@@ -77,12 +72,14 @@ let everyDayTemp = fiveDay.list[i].main.temp;
 let everyDayHumidity = fiveDay.list[i].main.humidity;
 let everyDayWind = fiveDay.list[i].wind.speed;
 // console.log(everyDayWind)
-let everyDayIcon = cityweather.weather[i].icon
-    let imageUrl = "https://openweathermap.org/img/wn/" + everyDayIcon + "@2x.png"
+let everyDayIcon = cityweather.list[i].weather.icon
+let imageUrl = "https://openweathermap.org/img/wn/" + everyDayIcon + "@2x.png"
 
 $(forecastinfo).append($("<p>").text("Temperature is:"+everyDayTemp))
 $(forecastinfo).append($("<p>").text("Humidity is:"+everyDayHumidity))
 $(forecastinfo).append($("<p>").text("Wind speed is:"+everyDayWind))
+$(forecastinfo).append($("<img>").attr("src", imageUrl))
+
 
     }
     addLocalStorage(fiveDay)
