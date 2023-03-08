@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-# Screen shot
+## Screen shot
 
 
 ## Background
