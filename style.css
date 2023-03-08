@@ -1,8 +1,3 @@
-:root {
-    --lightBlue: #8ecae6;
-    --darkBlue: #044464;
-    --yellow: #ffb703;
-}
 
 * {
     margin:0;
@@ -16,7 +11,7 @@ body {
 }
 
 .container-fluid {
-    background-color: var(--yellow);
+    background-color: var(--orange);
     max-width: 100%;
     height: auto;
     width: auto;
@@ -24,18 +19,14 @@ body {
 }
 
 .fiveDays {
-    color:var(--darkBlue);
-    font-size: 13px;
+    color:var(--navy);
+    font-size: 20px;
 }
 
 
-button {
-    border-radius: 10px;
-    background-color: #D6B68C;
-    margin: 5px;
+#search-button {
+    background-color: var(--navy);
+    color: rgb(220, 211, 211);
 }
 
-img {
-    max-width: 60%;
-    height: auto;
-}
+

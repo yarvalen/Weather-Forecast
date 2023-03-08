@@ -41,7 +41,7 @@ return response.json();
     let citywind = document.createElement('h2')
     let currentIcon = cityweather.weather[0].icon
     let imageUrl = "https://openweathermap.org/img/wn/" + currentIcon + "@2x.png"
-    cityname.textContent = "city name:"+cityweather.name
+    cityname.textContent = "City Name:"+cityweather.name
     citytemp.textContent = cityweather.main.temp+"°C"
     cityhumidity.textContent = cityweather.main.humidity+"%"
     citywind.textContent = cityweather.wind.speed+"speed"
