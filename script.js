@@ -45,7 +45,6 @@ return response.json();
     citytemp.textContent = cityweather.main.temp+"°C"
     cityhumidity.textContent = cityweather.main.humidity+"%"
     citywind.textContent = cityweather.wind.speed+"speed"
-    // currentIcon.textContent = cityweather.weather.icon
     nowresults.appendChild(cityname)
     nowresults.appendChild(citytemp)
     nowresults.appendChild(cityhumidity)
