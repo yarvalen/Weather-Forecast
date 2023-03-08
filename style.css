@@ -1,0 +1,44 @@
+.forecast-div {
+    background-color: #8CACD6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: max-content;
+}
+
+.current-weather {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    background-color: #8CACD6;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+h2, h4 {
+    font-size: large;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #D6B68C;
+    margin: 5px;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+}
+
+.previous-searches {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    width: 16rem;
+}
