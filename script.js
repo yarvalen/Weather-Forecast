@@ -39,14 +39,21 @@ return response.json();
     let citytemp = document.createElement('h2')
     let cityhumidity = document.createElement('h2')
     let citywind = document.createElement('h2')
+    let currentIcon = cityweather.weather[0].icon
+    let imageUrl = "https://openweathermap.org/img/wn/" + currentIcon + "@2x.png"
     cityname.textContent = "city name:"+cityweather.name
     citytemp.textContent = cityweather.main.temp+"°C"
     cityhumidity.textContent = cityweather.main.humidity+"%"
     citywind.textContent = cityweather.wind.speed+"speed"
+    // currentIcon.textContent = cityweather.weather.icon
     nowresults.appendChild(cityname)
     nowresults.appendChild(citytemp)
     nowresults.appendChild(cityhumidity)
     nowresults.appendChild(citywind)
+    $(nowresults).append($("<img>").attr("src", imageUrl))
+
+    // nowresults.appendChild(currentIcon)
+
     citySearch(cityweather.coord.lon,cityweather.coord.lat)
 
 } )
@@ -70,10 +77,13 @@ let everyDayTemp = fiveDay.list[i].main.temp;
 let everyDayHumidity = fiveDay.list[i].main.humidity;
 let everyDayWind = fiveDay.list[i].wind.speed;
 // console.log(everyDayWind)
+let everyDayIcon = cityweather.weather[i].icon
+    let imageUrl = "https://openweathermap.org/img/wn/" + everyDayIcon + "@2x.png"
 
 $(forecastinfo).append($("<p>").text("Temperature is:"+everyDayTemp))
 $(forecastinfo).append($("<p>").text("Humidity is:"+everyDayHumidity))
 $(forecastinfo).append($("<p>").text("Wind speed is:"+everyDayWind))
+
     }
     addLocalStorage(fiveDay)
     buttonStorage ()
