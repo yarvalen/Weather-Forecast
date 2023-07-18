@@ -1,32 +1,33 @@
 
 * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin:0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body {    
+/* body {    
     height: 100vh;
-}
+} */
 
 .container-fluid {
-    background-color: var(--orange);
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    background-size: cover;
+    /* background-color: var(--orange); */
+    /* max-width: 100%; */
+    /* height: auto; */
+    /* width: auto; */
+    /* background-size: cover; */
 }
 
 .fiveDays {
-    color:var(--navy);
+    /* align-items: flex-end; */
+    color:red;
     font-size: 20px;
 }
 
 
 #search-button {
     background-color: var(--navy);
-    color: rgb(220, 211, 211);
+    color: rgb(60, 182, 97);
 }
 
 
