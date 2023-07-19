@@ -80,17 +80,32 @@ function citySearch(lon, lat) {
         // console.log(fiveDay.list[i]);
         let imageUrl = "https://openweathermap.org/img/wn/" + everyDayIcon + "@2x.png";
 
-        $(forecastinfo).append($("<h2>").text( weekday));
-        $(forecastinfo).append($("<img>").attr("src", imageUrl));
-        $(forecastinfo).append($("<p>").text("Temperature is:" + everyDayTemp));
-        $(forecastinfo).append($("<p>").text("Humidity is:" + everyDayHumidity));
-        $(forecastinfo).append($("<p>").text("Wind speed is:" + everyDayWind));
-        
+        // $(forecastinfo).append($("<h2>").text(weekday));
+        // $(forecastinfo).append($("<img>").attr("src", imageUrl));
+        // $(forecastinfo).append($("<p>").text("Temperature is:" + everyDayTemp));
+        // $(forecastinfo).append($("<p>").text("Humidity is:" + everyDayHumidity));
+        // $(forecastinfo).append($("<p>").text("Wind speed is:" + everyDayWind));
 
+        forecastinfo.innerHTML += makeHistoryForcastHtml(imageUrl, everyDayTemp, everyDayHumidity, everyDayWind, weekday);
       }
       addLocalStorage(fiveDay);
       buttonStorage();
     });
+}
+
+function makeHistoryForcastHtml(imageUrl, everyDayTemp, everyDayHumidity, everyDayWind, weekday) {
+  return `
+  <div class="card" style="width: 14rem;">
+  <h2>${weekday}</h2>
+  <img src="${imageUrl}" class="card-img-top" alt="...">
+  <div class="card-body">
+
+    <p class="card-text">Temperature is: ${everyDayTemp}</p>
+    <p class="card-text">Humidity is: ${everyDayHumidity}</p>
+    <p class="card-text">Wind speed is: ${everyDayWind}</p>
+  </div>
+</div>  
+  `;
 }
 function addLocalStorage(fiveDay) {
   let searchCityWeather = fiveDay.city.name;

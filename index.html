@@ -29,7 +29,7 @@
     <main>
       <div class="container">
         <div class="row align-items-start">
-          <section class="search-area col">
+          <section class="c">
             <div class="first row">
               <!-- search for city-->
               <form id="location-search">
@@ -38,20 +38,23 @@
               </form>
             </div>
 
-            <div class="past forecast">
+            <!-- <div class="past forecast">
               <ul class="previousCity"></ul>
+            </div> -->
+          </section>
+
+          <div class="second row">
+            <!-- date and city -->
+            <div id="cityweather" class="col cityweather">
+              <div id="nowresults" class="nowresults"></div>
             </div>
+
             <!-- 5 day weather -->
             <div class="fiveDay">
               <h3>5-day Forecast</h3>
-              <div class="forecastinfo"></div>
+              <div class="forecastinfo row justify-content-between"></div>
             </div>
-          </section>
-          <!-- date and city -->
-          <div id="cityweather" class="col cityweather">
-            <div id="nowresults" class="nowresults"></div>
           </div>
-          <div class="second row"></div>
         </div>
       </div>
     </main>

@@ -8,7 +8,7 @@ This challenge was focused on building a weather dashboard that will run in the 
 Using the 5 Day Weather ForecastLinks to retrieve weather data for cities.
 
 ## Page application
-Weather Dashboard link: 
+Weather Dashboard link: http://127.0.0.1:5503/Weather%20Dashboard/index.html
 
 ## Resources 
 https://releases.jquery.com/

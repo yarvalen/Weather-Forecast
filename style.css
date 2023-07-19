@@ -10,24 +10,25 @@
     height: 100vh;
 } */
 
+/* 
 .container-fluid {
-    /* background-color: var(--orange); */
-    /* max-width: 100%; */
-    /* height: auto; */
-    /* width: auto; */
-    /* background-size: cover; */
-}
+    background-color: var(--orange);
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    background-size: cover;
+} */
 
-.fiveDays {
-    /* align-items: flex-end; */
+/* .fiveDays {
+    align-items: flex-end;
     color:red;
     font-size: 20px;
-}
+} */
 
 
-#search-button {
+/* #search-button {
     background-color: var(--navy);
     color: rgb(60, 182, 97);
-}
+} */
 
 
