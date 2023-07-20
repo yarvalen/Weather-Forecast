@@ -1,7 +1,7 @@
 # Weather Dashboard
 
 ## Screen shot
-
+<img src="./image/Screen Shot 2023-07-19 at 22.43.52.png" alt=weather dashboard page>
 
 ## Background
 This challenge was focused on building a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
